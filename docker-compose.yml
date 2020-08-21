@@ -1,0 +1,9 @@
+version: '3.6'
+
+services:
+  umbriel-mongo:
+    image: bitnami/mongodb:latest
+    container_name: graphql-mongo
+    restart: always
+    ports:
+      - "27017:27017"
